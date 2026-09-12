@@ -169,7 +169,7 @@ CREATE POLICY "delete_commission_attachments_owner" ON commission_attachments FO
 
 CREATE INDEX IF NOT EXISTS idx_commission_attachments_commission_id ON commission_attachments(commission_id);
 
--- ──────────────────────── commission_comments ─────────────────────────
+-- ───────────────────────── commission_comments ─────────────────────────
 
 CREATE TABLE IF NOT EXISTS commission_comments (
   id            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -231,7 +231,7 @@ CREATE POLICY "select_comment_attachments" ON commission_comment_attachments FOR
     EXISTS (
       SELECT 1 FROM commission_comments cc
       WHERE cc.id = commission_comment_attachments.comment_id
-        AND (
+      AND (
         cc.is_public = true
         OR EXISTS (
           SELECT 1 FROM commissions c
@@ -265,7 +265,7 @@ CREATE POLICY "delete_comment_attachments" ON commission_comment_attachments FOR
 
 CREATE INDEX IF NOT EXISTS idx_comment_attachments_comment_id ON commission_comment_attachments(comment_id);
 
--- ───────────────────────────── offers ───────────────────────────────
+-- ─────────────────────────────── offers ───────────────────────────────
 
 CREATE TABLE IF NOT EXISTS offers (
   id               uuid PRIMARY KEY DEFAULT gen_random_uuid(),

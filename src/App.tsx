@@ -14,7 +14,7 @@ import { AdminLayout } from '@/layouts/AdminLayout';
 // ─── Critical: loaded eagerly (homepage = LCP page) ──────────────────────────
 import { LandingPage } from '@/pages/public/LandingPage';
 
-// ─── Public SEO pages: lazy-loaded, split from dashboard/admin ──────────────
+// ─── Public SEO pages: lazy-loaded, split from dashboard/admin ───────────────
 const DlaZlecajacychPage = lazy(() => import('@/pages/public/DlaZlecajacychPage').then(m => ({ default: m.DlaZlecajacychPage })));
 const DlaArtystowPage = lazy(() => import('@/pages/public/DlaArtystowPage').then(m => ({ default: m.DlaArtystowPage })));
 const ZleceniaPage = lazy(() => import('@/pages/public/ZleceniaPage').then(m => ({ default: m.ZleceniaPage })));

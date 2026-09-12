@@ -160,5 +160,64 @@ function Footer() {
                 { to: '/zlecenia', label: 'Zlecenia' },
                 { to: '/artysci', label: 'Artyści' },
                 { to: '/blog', label: 'Blog' },
-                { to: '/cennik,��������耝���������(��������������t�������������(����������������񱤁�������ѽ���1����Ѽ����ѽ􁍱���9����ѕ�еʹ�ѕ�е�Ʌ���є�������ٕ��ѕ�е�ٽ�������Ʌ�ͥѥ��������́�����չ��ɱ���������������1����𽱤�(�����������������(�������������հ�(����������𽑥��((�������������(�������������Ё�����9���􉙽�е�����ѕ�е�́����ɍ�͔��Ʌ������ձ�Ʉ�ݥ���ѕ�е��������������������(�������������հ������9����дЁ�������̈�(���������������l(�����������������Ѽ耜�酵�ܵ��Ʌ蜰������耝i���܁��Ʌ蜁��(�����������������Ѽ耜�鱕����Ʌ蜰������耝i�����Ʌ蜁��(�����������������Ѽ耜�鱕���������������ѽܜ�������耝i�������������������ܜ���(�����������������Ѽ耜�����鱕�����占��������耝���鱕����占����(�����������������Ѽ耜����������ѽܜ�������耝����������ܜ���(�����������������Ѽ耜���Ĝ�������耝D����(�����������������Ѽ耜����х�М�������耝-��х�М���(��������������t�������������(����������������񱤁�������ѽ���1����Ѽ����ѽ􁍱���9����ѕ�еʹ�ѕ�е�Ʌ���є�������ٕ��ѕ�е�ٽ�������Ʌ�ͥѥ��������́�����չ��ɱ���������������1����𽱤�(�����������������(�������������հ�(����������𽑥��((�������������(�������������Ё�����9���􉙽�е�����ѕ�е�́����ɍ�͔��Ʌ������ձ�Ʉ�ݥ���ѕ�е����������=�Ʌ�䁑��ݻe������(�������������հ������9����дЁ�������̈�(���������������l(�����������������Ѽ耜���Ʌ�䵑��ͅ���Ԝ�������耝=�Ʌ�䁑��ͅ���Ԝ���(�����������������Ѽ耜���Ʌ�䵑������������������耝=�Ʌ�䁑��������������(�����������������Ѽ耜���Ʌ�䵑�����Ʉ��������耝=�Ʌ�䁑�����Ʉ����(�����������������Ѽ耜���Ʌ�䵑����ѕ�Ԝ�������耝=�Ʌ�䁑����ѕ�Ԝ���(��������������t�������������(����������������񱤁�������ѽ���1����Ѽ����ѽ􁍱���9����ѕ�еʹ�ѕ�е�Ʌ���є�������ٕ��ѕ�е�ٽ�������Ʌ�ͥѥ��������́�����չ��ɱ���������������1����𽱤�(�����������������(�������������հ�(����������𽑥��((�������������(�������������Ё�����9���􉙽�е�����ѕ�е�́����ɍ�͔��Ʌ������ձ�Ʉ�ݥ���ѕ�е����������AɅݹ����(�������������հ������9����дЁ�������̈�(���������������l(�����������������Ѽ耜�ɕ�ձ������������耝I��ձ��������(�����������������Ѽ耜������孄����݅ѹ�͍���������耝A����孄����݅ѹ�m������(�����������������Ѽ耜��ͅ�䵑��������ѽܜ�������耝i�ͅ�䁑����������ܜ���(�����������������Ѽ耜��ͅ�䵑���鱕�����占��������耝i�ͅ�䁑���鱕����占����(��������������t�������������(����������������񱤁�������ѽ���1����Ѽ����ѽ􁍱���9����ѕ�еʹ�ѕ�е�Ʌ���є�������ٕ��ѕ�е�ٽ�������Ʌ�ͥѥ��������́�����չ��ɱ���������������1����𽱤�(�����������������(�������������հ�(����������𽑥��(��������𽑥��((���������؁�����9����д�ȁ��������്����ѕ�̵���ѕȁ���ѥ�䵉��ݕ�������Ё��ɑ�ȵЁ��ɑ�ȵ�Ʌ���є������д��ʹ陱��ɽ܈�(������������������9����ѕ�е�́ѕ�е�Ʌ���є������
-�����ԁ�ѥ��̸�]�镱�����Ʌ݄������񽹔����(������������������9����ѕ�е�́ѕ�е�Ʌ���є������A��љ�ɵ����ɭ���������9������Ёͭ��������ѕɹ�ѽ�崸���(��������𽑥��(������𽑥��(����𽙽�ѕ��(����)�(
+                { to: '/cennik', label: 'Cennik' },
+              ].map((l) => (
+                <li key={l.to}><Link to={l.to} className="text-sm text-graphite-200 hover:text-ivory-100 transition-colors link-underline">{l.label}</Link></li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-mono text-xs uppercase tracking-ultra-wide text-gold-300">Dla kogo</h4>
+            <ul className="mt-4 space-y-3">
+              {[
+                { to: '/zamow-obraz', label: 'Zamów obraz' },
+                { to: '/zlec-obraz', label: 'Zleć obraz' },
+                { to: '/zlecenia-dla-artystow', label: 'Zlecenia dla artystów' },
+                { to: '/dla-zlecajacych', label: 'Dla zlecających' },
+                { to: '/dla-artystow', label: 'Dla artystów' },
+                { to: '/faq', label: 'FAQ' },
+                { to: '/kontakt', label: 'Kontakt' },
+              ].map((l) => (
+                <li key={l.to}><Link to={l.to} className="text-sm text-graphite-200 hover:text-ivory-100 transition-colors link-underline">{l.label}</Link></li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-mono text-xs uppercase tracking-ultra-wide text-gold-300">Obrazy do wnętrz</h4>
+            <ul className="mt-4 space-y-3">
+              {[
+                { to: '/obrazy-do-salonu', label: 'Obrazy do salonu' },
+                { to: '/obrazy-do-sypialni', label: 'Obrazy do sypialni' },
+                { to: '/obrazy-do-biura', label: 'Obrazy do biura' },
+                { to: '/obrazy-do-hotelu', label: 'Obrazy do hotelu' },
+              ].map((l) => (
+                <li key={l.to}><Link to={l.to} className="text-sm text-graphite-200 hover:text-ivory-100 transition-colors link-underline">{l.label}</Link></li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-mono text-xs uppercase tracking-ultra-wide text-gold-300">Prawne</h4>
+            <ul className="mt-4 space-y-3">
+              {[
+                { to: '/regulamin', label: 'Regulamin' },
+                { to: '/polityka-prywatnosci', label: 'Polityka prywatności' },
+                { to: '/zasady-dla-artystow', label: 'Zasady dla artystów' },
+                { to: '/zasady-dla-zlecajacych', label: 'Zasady dla zlecających' },
+              ].map((l) => (
+                <li key={l.to}><Link to={l.to} className="text-sm text-graphite-200 hover:text-ivory-100 transition-colors link-underline">{l.label}</Link></li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-graphite-500 pt-8 sm:flex-row">
+          <p className="text-xs text-graphite-300">© 2025 Artiors. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-graphite-300">Platforma marketplace. Nie jest sklepem internetowym.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
